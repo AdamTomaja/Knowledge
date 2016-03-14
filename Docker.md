@@ -1,3 +1,4 @@
+# Basic commands
 * ```docker pull ubuntu```	pull ubuntu image from online docker hub
 * ```docker run -i -t ubuntu bash```	run ubuntu image in interactive mode and call bash process
 * ```docker commit hungry_archimedes``` apache	save 'hungry_archimedes' container state to 'apache' image
@@ -6,3 +7,6 @@
 * ```docker attach hungry_archimedes```	attach to running container
 * ```docker stop $(docker ps -a -q)```	stop all containers
 * ```docker rm $(docker ps -a -q)```	remove all containers
+* 
+# Other usefull parameters
+* ```-v /host:/guest``` - Mount /host directory of host to the /guest directory in container
