@@ -16,3 +16,7 @@
 * Detach from sesssion by **ctrl + a, ctrl + d**
 * Display sessions ```screen -list```
 * Attach to existing session ```screen -r mysession```
+
+# Networking 
+* Release ip address on **eth0** ```dhclient -r eth0```
+* Fetch ip address from dhcp on **eth0** interface ```dhclient eth0```
