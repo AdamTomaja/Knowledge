@@ -20,3 +20,4 @@
 # Networking 
 * Release ip address on **eth0** ```dhclient -r eth0```
 * Fetch ip address from dhcp on **eth0** interface ```dhclient eth0```
+* To make above commands more verbose You can add ```-v``` flag
