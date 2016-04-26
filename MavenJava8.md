@@ -1,3 +1,8 @@
+# Quickly generate new Java Maven Project
+```bash
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart
+```
+
 # How do I configure maven to compile in Java 8 version
 ```xml
 <project>
