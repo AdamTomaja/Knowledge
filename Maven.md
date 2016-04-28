@@ -20,3 +20,47 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -Darchetyp
     </build>
 </project>
 ```
+
+# Deploy to remote Tomcat server
+## Configure plugin
+```xml
+<project>
+    <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://yourserver:8083/manager/text</url>
+					<server>serverName</server>
+					<path>/appname</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+```
+## Configure manager username and password in external file
+```bash
+vi C:\Users\Adam\.m2\settings.xml
+```
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+<servers>
+      <server>
+        <id>serverName</id>
+        <username>admin</username>
+        <password>yourpassword</password>
+      </server>
+	</servers>
+</settings>
+```
+* Now You can execute 
+```bash
+mvn tomcat7:deploy
+``` 
