@@ -48,5 +48,10 @@ db.myCollection.insert({'Key1': 'Value1', 'Key2': 'Value2'});
 show collections
 ```
 
+* Display server status
+```
+db.serverStatus()
+```
+
 * Official MongoDB shell reference https://docs.mongodb.com/manual/reference/mongo-shell/
 
