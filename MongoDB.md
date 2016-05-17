@@ -22,6 +22,12 @@ service mongd stop
 ```
 db
 ```
+
+* Show existing databases
+``` 
+show dbs
+```
+
 * Select database You want to use
 ```
 use myDatabase
