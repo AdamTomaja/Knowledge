@@ -48,3 +48,5 @@ db.myCollection.insert({'Key1': 'Value1', 'Key2': 'Value2'});
 show collections
 ```
 
+* Official MongoDB shell reference https://docs.mongodb.com/manual/reference/mongo-shell/
+
