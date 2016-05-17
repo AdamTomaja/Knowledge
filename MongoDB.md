@@ -17,3 +17,13 @@ service mongd stop
 /var/lib/mongodb/
 ```
 
+# Basic MongoDB shell commands #
+* Display current database
+```
+db
+```
+* Select database You want to use
+```
+use myDatabase
+```
+
