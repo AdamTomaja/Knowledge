@@ -18,6 +18,11 @@ service mongd stop
 ```
 
 # Basic MongoDB shell commands #
+* Show some help
+```
+help
+```
+
 * Display current database
 ```
 db
