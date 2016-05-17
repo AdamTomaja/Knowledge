@@ -38,3 +38,8 @@ use myDatabase
 db.myCollection.insert({'Key1': 'Value1', 'Key2': 'Value2'});
 ```
 
+* Show existing collections
+```
+show collections
+```
+
