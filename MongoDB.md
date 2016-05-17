@@ -33,3 +33,8 @@ show dbs
 use myDatabase
 ```
 
+* Create new collection if not exists and insert new document
+```
+db.myCollection.insert({'Key1': 'Value1', 'Key2': 'Value2'});
+```
+
