@@ -68,5 +68,11 @@ db.createUser({user: "adam", pwd: "veryComplexPassword", roles: ["readWrite"]});
 * Set *security.authorization* property to *enabled*. You can do this in /etc/mongod.conf file
 * Restart service
 ```bash
-service mongd restart
+service mongod restart
 ```
+* Connect to database by the client and type
+```javascript
+use myDb
+db.auth("adam", "veryComplexPassword");
+```
+* Now You should be authorized to do some operations on database
