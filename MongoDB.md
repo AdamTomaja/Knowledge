@@ -55,3 +55,18 @@ db.serverStatus()
 
 * Official MongoDB shell reference https://docs.mongodb.com/manual/reference/mongo-shell/
 
+# Create user and enable authorization #
+* First of all You should create some database. To do this, insert some document into collection and db will be created automatically.
+```javascript
+use myDb
+db.myCollection.insert({""});
+```
+* Now You can create new User with password and roles. New user with name "adam" and password "veryComplexPassword" will be created. This user will be able to read and modify "myDb" database
+```javascript
+db.createUser({user: "adam", pwd: "veryComplexPassword", roles: ["readWrite"]});
+```
+* Set *security.authorization* property to *enabled*. You can do this in /etc/mongod.conf file
+* Restart service
+```bash
+service mongd restart
+```
