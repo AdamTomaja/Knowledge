@@ -79,3 +79,17 @@ db.auth("adam", "veryComplexPassword");
 
 # Graphical management tool for MongoDB
 * https://robomongo.org/download
+
+# Creating new server functions and using them #
+* Create new function
+```javascript
+db.system.js.save({_id: "echo", value: function(text){print(text);}});
+```
+* Load function from database
+```javascript
+db.loadServerScripts();
+```
+* Now You can use the function
+```javascript
+echo("Hello world!");
+```
