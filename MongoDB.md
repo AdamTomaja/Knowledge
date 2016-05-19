@@ -37,6 +37,10 @@ show dbs
 ```
 use myDatabase
 ```
+* Create new collection explicitly
+```javascript
+db.createCollection("newCollection");
+```
 
 * Create new collection if not exists and insert new document
 ```
