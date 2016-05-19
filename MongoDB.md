@@ -83,7 +83,12 @@ db.auth("adam", "veryComplexPassword");
 # Creating new server functions and using them #
 * Create new function
 ```javascript
-db.system.js.save({_id: "echo", value: function(text){print(text);}});
+db.system.js.save({
+     _id: "echo", 
+     value: function(text){
+               print(text);
+           }
+});
 ```
 * Load function from database
 ```javascript
