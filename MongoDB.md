@@ -84,6 +84,9 @@ db.auth("adam", "veryComplexPassword");
 # Graphical management tool for MongoDB
 * https://robomongo.org/download
 
+# Great Java library, simple queries and mapping to POJO
+* http://jongo.org
+
 # Creating new server functions and using them #
 * Create new function
 ```javascript
