@@ -76,3 +76,6 @@ use myDb
 db.auth("adam", "veryComplexPassword");
 ```
 * Now You should be authorized to do some operations on database
+
+# Graphical management tool for MongoDB
+* https://robomongo.org/download
