@@ -79,3 +79,6 @@ fabric.properties
 
 bin
 build
+
+# Python
+*.pyc
