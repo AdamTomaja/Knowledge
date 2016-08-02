@@ -1,3 +1,8 @@
+# Add user to virtual box group to get shared-folder permissions
+```bash
+sudo adduser your-user vboxsf
+```
+
 # How do I compress and extract the whole directory ?
 * **Compress**: ```tar -zcvf archive-name.tar.gz directory-name```
 * **Decompress**: ```tar -zxvf archive.tar.gz -C /outputDirectory```
