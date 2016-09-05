@@ -1,2 +1,2 @@
 # Set cache dir
-```--disk-cache-dir=E:\Cache```
+--disk-cache-dir=E:\Cache
