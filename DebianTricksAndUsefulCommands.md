@@ -7,6 +7,13 @@ sudo adduser your-user vboxsf
 * **Compress**: ```tar -zcvf archive-name.tar.gz directory-name```
 * **Decompress**: ```tar -zxvf archive.tar.gz -C /outputDirectory```
 
+# Install Java
+* Download JDK ```wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz```
+* Decompress archive ```tar -zxf jdk-8u5-linux-x64.tar.gz -C /opt/jdk```
+* Add JAVA alternative ```update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_05/bin/java 100```
+* Add JAVAC alternative ```update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_05/bin/javac 100```
+* Verify alternatives ```update-alternatives --display java```
+
 # Change version of java
 * Enter the command ```update-alternatives --config java```
 * Select desirect application version by number
