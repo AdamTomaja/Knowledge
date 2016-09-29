@@ -65,3 +65,7 @@ vi C:\Users\Adam\.m2\settings.xml
 ```bash
 mvn tomcat7:deploy
 ``` 
+
+# Install artifact in manual way
+```bash
+mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging>```
