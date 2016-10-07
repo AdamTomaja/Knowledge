@@ -1,3 +1,24 @@
+# Attach sources to the package
+```xml
+<project>
+	<build>
+		<plugins>
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-source-plugin</artifactId>
+			  <executions>
+			    <execution>
+			      <id>attach-sources</id>
+			      <goals>
+				<goal>jar</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+```
 # Quickly generate new Java Maven Project
 ```bash
 mvn archetype:generate -DgroupId=your.package -DartifactId=projectArtifactId -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
