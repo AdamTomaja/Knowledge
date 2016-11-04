@@ -1,3 +1,26 @@
+# Install VirtualBox guest additions 
+* Login as a root 
+```bash
+su
+```
+* Update apt database, and upgrade packages 
+```bash
+apt-get update
+apt-get upgrade
+```
+* Install required packages
+```bash
+apt-get install build-essential module-assistant
+```
+* Configure your system for building kernel modules 
+```bash
+m-a prepare
+```
+* Mount guest additions cd by selecting the *Install Guest Additions* from *Devices* menu
+* Execute install script
+```bash
+sh /media/cdrom/VBoxLinuxAdditions.run
+```
 # Add user to virtual box group to get shared-folder permissions
 ```bash
 sudo adduser your-user vboxsf
@@ -56,7 +79,7 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin
 
 start() {
  sh /usr/share/tomcat7/bin/startup.sh
-}
+}*
 
 stop() {
  sh /usr/share/tomcat7/bin/shutdown.sh
@@ -79,3 +102,4 @@ And from now on it will be automatically started and shut down upon entering the
 ```bash
 service tomcat7 <stop|start|restart>
 ```
+
