@@ -45,6 +45,12 @@ sudo adduser your-user vboxsf
 * Install the ncdu application ```apt-get install ncdu`
 * Execute analyzer ```ncdu -x -q```
 
+# Analyze disk space usage without ncdu
+```bash
+du -h / | grep '[0-9\.]\+G'
+```
+This will show directories with size in gigabytes
+
 # Background jobs - screen 
 * Install **screen** ```apt-get install screen```
 * Start new session ```screen -S mysession```
