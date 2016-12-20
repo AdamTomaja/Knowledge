@@ -1,3 +1,7 @@
+# Show files opened by process
+```bash
+lsof -p <pid>
+```
 # Install VirtualBox guest additions 
 * Login as a root 
 ```bash
