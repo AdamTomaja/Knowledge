@@ -1,3 +1,19 @@
+# Useful flags
+* Update all snapshot dependencies 
+```bash
+mvn clean install -U
+```
+
+* Disable tests executing
+```bash
+mvn install -DskipTests
+```
+
+* Disable tests sources compiling
+```bash
+mvn install -Dmaven.test.skip=true
+```
+
 # Attach sources to the package
 ```xml
 <project>
